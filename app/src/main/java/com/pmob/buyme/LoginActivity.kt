@@ -17,34 +17,39 @@ class LoginActivity : AppCompatActivity() {
         val edtPhone = findViewById<EditText>(R.id.edtPhone)
         val edtPassword = findViewById<EditText>(R.id.edtPassword)
         val btnLogin = findViewById<Button>(R.id.btnLogin)
+        val txtForgot = findViewById<TextView>(R.id.txtForgot)
         val txtRegister = findViewById<TextView>(R.id.txtRegister)
 
         val pref = getSharedPreferences("LOGIN", MODE_PRIVATE)
-        if (pref.getBoolean("IS_LOGIN", false)) {
-            startActivity(Intent(this, MainActivity::class.java))
-            finish()
+
+        txtForgot.setOnClickListener {
+            startActivity(Intent(this, ForgotPasswordActivity::class.java))
         }
 
-        // Pindah ke halaman Register
         txtRegister.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
 
+        txtForgot.setOnClickListener {
+            startActivity(Intent(this, ForgotPasswordEmailActivity::class.java))
+        }
+
+        txtRegister.setOnClickListener {
+            startActivity(Intent(this, RegisterActivity::class.java))
+        }
+
+
+
         btnLogin.setOnClickListener {
-            val phone = edtPhone.text.toString().trim()
-            val password = edtPassword.text.toString().trim()
+            val phone = edtPhone.text.toString()
+            val password = edtPassword.text.toString()
 
             if (phone.isEmpty() || password.isEmpty()) {
-                Toast.makeText(this, "Nomor HP dan Password wajib diisi", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Data belum lengkap", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
-            // Login langsung (tanpa validasi backend)
-            pref.edit()
-                .putBoolean("IS_LOGIN", true)
-                .apply()
-
-            Toast.makeText(this, "Login berhasil", Toast.LENGTH_SHORT).show()
+            pref.edit().putBoolean("IS_LOGIN", true).apply()
 
             startActivity(Intent(this, MainActivity::class.java))
             finish()

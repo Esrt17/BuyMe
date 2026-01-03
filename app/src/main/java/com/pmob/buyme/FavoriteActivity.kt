@@ -10,6 +10,7 @@ import com.google.firebase.database.FirebaseDatabase
 class FavoriteActivity : AppCompatActivity() {
 
     private lateinit var rvFavorite: RecyclerView
+    private lateinit var adapter: FavoriteAdapter
     private val favoriteList = mutableListOf<FavoriteItem>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +19,9 @@ class FavoriteActivity : AppCompatActivity() {
 
         rvFavorite = findViewById(R.id.rvFavorite)
         rvFavorite.layoutManager = LinearLayoutManager(this)
-        rvFavorite.adapter = FavoriteAdapter(favoriteList)
+
+        adapter = FavoriteAdapter(favoriteList)
+        rvFavorite.adapter = adapter
 
         loadFavorites()
     }
@@ -36,12 +39,10 @@ class FavoriteActivity : AppCompatActivity() {
                 for (data in snapshot.children) {
                     val item = data.getValue(FavoriteItem::class.java)
                     if (item != null) {
-                        favoriteList.add(
-                            item.copy(id = data.key ?: "")
-                        )
+                        favoriteList.add(item.copy(id = data.key ?: ""))
                     }
                 }
-                rvFavorite.adapter?.notifyDataSetChanged()
+                adapter.notifyDataSetChanged()
             }
     }
 }
