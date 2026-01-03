@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "793083895708",
+    "firebase_url": "https://buyme-f7f11-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "buyme-f7f11",
+    "storage_bucket": "buyme-f7f11.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793083895708:android:cdbcc4db111ce312a2b259",
+        "android_client_info": {
+          "package_name": "com.pmob.buyme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa9FzQfNFMZ2uokJjlFcYILJ8B2f1flMA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

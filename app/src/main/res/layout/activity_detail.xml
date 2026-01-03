@@ -3,47 +3,100 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- WRAPPER (WAJIB 1 ANAK) -->
     <LinearLayout
-        android:padding="16dp"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
+        <!-- NAMA + FAVORITE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rendang"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end"/>
+
+            <ImageButton
+                android:id="@+id/btnFavorite"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_favorite_border"
+                android:contentDescription="Favorite"/>
+        </LinearLayout>
+
+        <!-- IMAGE -->
         <ImageView
             android:id="@+id/ivImage"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/rendang"/>
-
-        <TextView
-            android:id="@+id/tvName"
-            android:text="Rendang"
-            android:fontFamily="@font/poppinssemibold"
-            android:textSize="20sp"
-            android:textStyle="bold"
             android:layout_marginTop="12dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:scaleType="centerCrop"
+            android:src="@drawable/rrendang"/>
 
+        <!-- PRICE -->
         <TextView
             android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text="Rp 15.000"
             android:fontFamily="@font/poppinsmedium"
             android:textColor="#FF5722"
-            android:textStyle="bold"
-            android:layout_marginTop="4dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:textStyle="bold"/>
 
+        <!-- DESCRIPTION -->
         <TextView
             android:id="@+id/tvDescription"
-            android:text="Deskripsi makanan..."
-            android:fontFamily="@font/poppinsregular"
-            android:layout_marginTop="12dp"
-            android:textSize="14sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Rendang adalah masakan daging khas Minangkabau dari Sumatera Barat. Daging dimasak lama dengan santan dan rempah hingga kering. Rasanya gurih pedas dan warnanya coklat kehitaman. Rendang mencerminkan proses panjang dan nilai budaya.
+"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tvStoreName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Rumah Nusantara"
+            android:fontFamily="@font/poppinsbold"/>
+
+        <!-- MAPS -->
+
+        <TextView
+            android:id="@+id/tvStoreLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Store"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <Button
+            android:id="@+id/btnMaps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Lihat Lokasi Toko"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="8dp"
+            android:backgroundTint="#ABABAB"
+            android:textColor="@android:color/white"/>
 
     </LinearLayout>
 </ScrollView>

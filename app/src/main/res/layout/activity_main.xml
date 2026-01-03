@@ -8,24 +8,37 @@
     android:padding="16dp"
     android:background="@color/background">
 
-    <!-- Header (TIDAK IKUT SCROLL) -->
-    <TextView
-        android:text="Selamat Datang di BuyMe"
-        android:fontFamily="@font/poppinsbold"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <!-- Search (TIDAK IKUT SCROLL) -->
-    <EditText
-        android:hint="Search food, package etc."
-        android:drawableStart="@android:drawable/ic_menu_search"
-        android:padding="12dp"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/bg_search"
+    <!-- HEADER + FAVORITE -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="12dp"
+            android:text="Selamat Datang di BuyMe"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/btnFavoritePage"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:background="@drawable/bg_circle"
+            android:contentDescription="Favorite"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_favorite_filled" />
+
+    </LinearLayout>
+
 
     <!-- Categories -->
     <TextView
@@ -60,5 +73,15 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:fontFamily="@font/poppinsmedium"
+        android:backgroundTint="#787777"
+        android:textColor="@android:color/white"/>
+
 
 </LinearLayout>
