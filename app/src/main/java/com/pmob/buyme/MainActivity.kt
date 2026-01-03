@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity() {
                 storeId = 1
             ),
             TrendingItem(
-                id = "pajangan_001",
+                id = "pajangan_dinding_001",
                 name = "Pajangan Dinding",
                 price = "Rp 35.000",
                 image = R.drawable.pajangan,
@@ -126,7 +126,7 @@ class MainActivity : AppCompatActivity() {
                 image = R.drawable.rrawon,
                 category = "Makanan",
                 description = "Rawon khas Jawa Timur dengan kuah hitam dari kluwek, bercita rasa gurih dan kaya rempah, disajikan dengan daging empuk.",
-                storeId = 1,
+                storeId = 1
             ),
             TrendingItem(
                 id = "wedang_ronde_001",
@@ -156,22 +156,25 @@ class MainActivity : AppCompatActivity() {
                 storeId = 1
             ),
             TrendingItem(
+                id = "ayam_betutu_001",
                 name = "Ayam Betutu",
                 price = "Rp 86.000",
                 image = R.drawable.ayambetutu,
                 category = "Makanan",
-                description = "Sate ayam empuk dengan bumbu kacang kental dan aroma bakaran yang menggugah selera.",
+                description = "Ayam Betutu khas Bali dengan bumbu rempah yang meresap dan aroma khas.",
                 storeId = 1
             ),
             TrendingItem(
+                id = "kerak_telor_001",
                 name = "Kerak Telor",
                 price = "Rp 25.000",
                 image = R.drawable.keraktelor,
                 category = "Makanan",
-                description = "Sate ayam empuk dengan bumbu kacang kental dan aroma bakaran yang menggugah selera.",
+                description = "Makanan khas Betawi berbahan ketan, telur, dan kelapa sangrai.",
                 storeId = 1
             ),
             TrendingItem(
+                id = "asbak_kayu_001",
                 name = "Asbak",
                 price = "Rp 65.000",
                 image = R.drawable.asbakkayu,
@@ -180,6 +183,7 @@ class MainActivity : AppCompatActivity() {
                 storeId = 2
             ),
             TrendingItem(
+                id = "dompet_kulit_001",
                 name = "Dompet Kulit",
                 price = "Rp 95.000",
                 image = R.drawable.dompetkulit,
@@ -188,6 +192,7 @@ class MainActivity : AppCompatActivity() {
                 storeId = 2
             ),
             TrendingItem(
+                id = "gantungan_kunci_001",
                 name = "Gantungan Kunci",
                 price = "Rp 15.000",
                 image = R.drawable.gantungankunci,
@@ -196,27 +201,30 @@ class MainActivity : AppCompatActivity() {
                 storeId = 2
             ),
             TrendingItem(
+                id = "mie_aceh_001",
                 name = "Mie Aceh",
                 price = "Rp 20.000",
                 image = R.drawable.miaceh,
                 category = "Makanan",
-                description = "Sate ayam empuk dengan bumbu kacang kental dan aroma bakaran yang menggugah selera.",
+                description = "Mie khas Aceh dengan bumbu kari yang kaya rasa.",
                 storeId = 1
             ),
             TrendingItem(
+                id = "papeda_001",
                 name = "Papeda",
                 price = "Rp 15.000",
                 image = R.drawable.ppapeda,
                 category = "Makanan",
-                description = "Sate ayam empuk dengan bumbu kacang kental dan aroma bakaran yang menggugah selera.",
+                description = "Makanan khas Papua berbahan dasar sagu dengan tekstur kenyal.",
                 storeId = 1
             ),
             TrendingItem(
+                id = "pempek_001",
                 name = "Pempek",
                 price = "Rp 10.000",
                 image = R.drawable.ppempek,
                 category = "Makanan",
-                description = "Sate ayam empuk dengan bumbu kacang kental dan aroma bakaran yang menggugah selera.",
+                description = "Pempek khas Palembang disajikan dengan kuah cuko.",
                 storeId = 1
             )
         )

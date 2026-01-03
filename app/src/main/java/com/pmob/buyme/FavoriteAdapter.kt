@@ -29,5 +29,5 @@ class FavoriteAdapter(
         holder.category.text = item.category
     }
 
-    override fun getItemCount() = list.size
+    override fun getItemCount(): Int = list.size
 }
