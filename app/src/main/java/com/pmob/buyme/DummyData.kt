@@ -9,7 +9,7 @@ object DummyData {
             TrendingItem(
                 name = "Rendang",
                 price = "Rp 15.000",
-                image = R.drawable.rendang,
+                image = R.drawable.rrendang,
                 category = "Makanan",
                 description = "Rendang khas Minangkabau dengan daging empuk dan bumbu rempah kaya rasa yang dimasak perlahan hingga meresap.",
                 storeId = 1
@@ -17,7 +17,7 @@ object DummyData {
             TrendingItem(
                 name = "Rawon",
                 price = "Rp 14.000",
-                image = R.drawable.rawon,
+                image = R.drawable.rrawon,
                 category = "Makanan",
                 description = "Rawon khas Jawa Timur dengan kuah hitam dari kluwek, cita rasa gurih dan aroma rempah yang khas.",
                 storeId = 1
@@ -36,6 +36,62 @@ object DummyData {
                 image = R.drawable.sateayam,
                 category = "Makanan",
                 description = "Sate ayam empuk dengan bumbu kacang kental dan aroma bakaran yang menggugah selera.",
+                storeId = 1
+            ),
+            TrendingItem(
+                name = "Ayam Betutu",
+                price = "Rp 86.000",
+                image = R.drawable.ayambetutu,
+                category = "Makanan",
+                description = "Masakan khas Bali berupa ayam utuh yang dimasak dengan bumbu rempah khas Bali, bercita rasa pedas dan aromatik.",
+                storeId = 1
+            ),
+            TrendingItem(
+                name = "Kerak Telor",
+                price = "Rp 25.000",
+                image = R.drawable.keraktelor,
+                category = "Makanan",
+                description = "Makanan khas Betawi (Jakarta) berbahan beras ketan, telur, dan serundeng kelapa dengan rasa gurih dan khas.",
+                storeId = 1
+            ),
+            TrendingItem(
+                name = "Mie Aceh",
+                price = "Rp 20.000",
+                image = R.drawable.miaceh,
+                category = "Makanan",
+                description = "Hidangan khas Aceh berupa mie tebal dengan bumbu kari rempah yang kuat, disajikan dengan daging atau seafood.",
+                storeId = 1
+            ),
+            TrendingItem(
+                name = "Papeda",
+                price = "Rp 15.000",
+                image = R.drawable.ppapeda,
+                category = "Makanan",
+                description = "Makanan pokok khas Papua dan Maluku berupa bubur sagu dengan tekstur kenyal, biasanya disajikan dengan ikan kuah kuning.",
+                storeId = 1
+            ),
+            TrendingItem(
+                name = "Pempek",
+                price = "Rp 10.000",
+                image = R.drawable.ppempek,
+                category = "Makanan",
+                description = "Makanan khas Palembang berbahan ikan dan tepung sagu, disajikan dengan kuah cuko yang asam, manis, dan pedas.",
+                storeId = 1
+            ),
+            TrendingItem(
+                name = "Soto Banjar",
+                price = "Rp 20.000",
+                image = R.drawable.sotobanjar,
+                category = "Makanan",
+                description = "Soto khas Kalimantan Selatan dengan kuah bening gurih, ayam suwir, telur, dan aroma rempah yang lembut.",
+                storeId = 1
+            ),
+            TrendingItem(
+                name = "Sate Lilit",
+                price = "Rp 20.000",
+                image = R.drawable.satelilit,
+                category = "Makanan",
+                description = "Sate khas Bali berbahan daging cincang yang dililitkan pada batang serai, bercita rasa gurih dan rempah yang kuat.",
                 storeId = 1
             ),
             TrendingItem(
@@ -157,19 +213,43 @@ object DummyData {
                 storeId = 2
             ),
             TrendingItem(
-                name = "Topi",
-                price = "Rp 35.000",
-                image = R.drawable.topi,
+                name = "Cermin",
+                price = "Rp 100.000",
+                image = R.drawable.cermindinding,
                 category = "Aksesoris",
-                description = "Topi simpel dan stylish yang cocok digunakan untuk berbagai aktivitas.",
+                description = "Cermin dinding dengan desain minimalis yang cocok untuk mempercantik ruangan dan memberikan kesan luas.",
                 storeId = 2
             ),
             TrendingItem(
-                name = "Kaos Kaki Cream MTF",
-                price = "Rp 15.000",
-                image = R.drawable.pkan5,
+                name = "Asbak",
+                price = "Rp 65.000",
+                image = R.drawable.asbakkayu,
                 category = "Aksesoris",
-                description = "Kaos kaki berbahan lembut dengan warna netral, nyaman dipakai seharian.",
+                description = "Asbak kayu dengan tampilan natural, kuat, dan cocok digunakan di dalam maupun luar ruangan.",
+                storeId = 2
+            ),
+            TrendingItem(
+                name = "Dompet Kulit",
+                price = "Rp 95.000",
+                image = R.drawable.dompetkulit,
+                category = "Aksesoris",
+                description = "Dompet kulit berkualitas dengan desain elegan, dilengkapi banyak slot kartu dan ruang penyimpanan uang.",
+                storeId = 2
+            ),
+            TrendingItem(
+                name = "Gantungan Kunci",
+                price = "Rp 15.000",
+                image = R.drawable.gantungankunci,
+                category = "Aksesoris",
+                description = "Gantungan kunci unik dan ringan, cocok sebagai aksesoris tas atau kunci kendaraan.",
+                storeId = 2
+            ),
+            TrendingItem(
+                name = "Gelang",
+                price = "Rp 15.000",
+                image = R.drawable.gelangmanikmanik,
+                category = "Aksesoris",
+                description = "Gelang manik-manik dengan desain sederhana dan menarik, cocok digunakan sehari-hari atau sebagai hadiah.",
                 storeId = 2
             ),
             TrendingItem(
@@ -177,7 +257,7 @@ object DummyData {
                 price = "Rp 155.000",
                 image = R.drawable.pkan6,
                 category = "Aksesoris",
-                description = "Sepatu putih dengan desain modern, nyaman digunakan untuk aktivitas sehari-hari.",
+                description = "Sepatu putih model tinggi dengan desain modern, nyaman dipakai dan cocok untuk berbagai aktivitas kasual.",
                 storeId = 2
             ),
             TrendingItem(
@@ -185,9 +265,17 @@ object DummyData {
                 price = "Rp 150.000",
                 image = R.drawable.pkan7,
                 category = "Aksesoris",
-                description = "Sepatu pendek warna putih dengan tampilan clean dan cocok dipadukan berbagai outfit.",
+                description = "Sepatu putih model pendek dengan tampilan clean, mudah dipadukan dengan berbagai gaya berpakaian.",
                 storeId = 2
             ),
-        )
+            TrendingItem(
+                name = "Jam Dinding",
+                price = "Rp 155.000",
+                image = R.drawable.jamdinding,
+                category = "Aksesoris",
+                description = "Jam dinding dengan desain modern dan angka jelas, cocok untuk ruang tamu, kamar, maupun kantor.",
+                storeId = 2
+            ),
+            )
     }
 }
